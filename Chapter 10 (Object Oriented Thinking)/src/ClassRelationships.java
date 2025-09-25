@@ -56,15 +56,27 @@ public class ClassRelationships {
 	
 	/**The <Student> has a <Name>, meaning a <Name> cannot exist separately without the <Student>*/
 	/**The <Student> has an <Address>, but the <Address> can exist independently from the <Student>*/
-	
+
+	//Composition: Name cannot exist without Student
 	/**
 		public class Student{}
 		
-		public class Name extends Student{}
-		
+		public class Name {
+  			public Name(Student s){}			//Constructor has to have the Student as a parameter
+		}	
 		
 	 */
-	
+	//Aggregation: Address can exist independently from Student
+	/**
+		public class Student{
+  			public Address studentAddress;		//If not modified, it will be read as null
+		}
+
+  		public class Address{ 
+			@Override
+   			public String toString(){}		//Returns the address as a string
+   		}
+ 	*/	
 		
 	//Aggregation may exist in objects of the same class, for example:
 	//										1
@@ -93,3 +105,4 @@ public class ClassRelationships {
 	
 	
 }
+
