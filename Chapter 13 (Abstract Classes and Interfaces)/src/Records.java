@@ -17,6 +17,12 @@ public class Records {
 		
 		System.out.println(nList.name());
 		System.out.println(nList.numOfPeople());
+
+		//Record object with accessor and mutator methods
+		record Student(String name) {
+			public String getName(){return name; }
+			public void setName(String newName) {newName = name; }
+		}
 	}
 	
 	
@@ -40,3 +46,4 @@ public class Records {
 	
 
 }
+
