@@ -1,0 +1,25 @@
+import java.util.Scanner;
+//Checks to make sure that when a user enters a key, the value is supposed to be an int: checks if it's not int without try/catch blocks
+public class UserInputTest{
+    
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        
+        int n = 0;
+        System.out.println("Enter an integer: ");
+        //int n = input.nextInt();
+        while(n == 0){
+            if(input.hasNextInt()){
+                n = input.nextInt();
+                break;
+            }else{
+                System.out.printf("Incorrect value, please try again\n");
+                input.next();
+            }
+        }
+
+        System.out.printf("Entered: %d\n", n);
+
+        input.close();
+    }
+}
