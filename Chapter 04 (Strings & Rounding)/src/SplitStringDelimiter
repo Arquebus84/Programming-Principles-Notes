@@ -1,0 +1,16 @@
+public class SplitStringsDelimiter{
+    //NOTE: Delimiter is a character (or sequence of chars) used to seperate distinct data (such as in strings) in plain text or data streams
+    /*      Ex 1 (substring):
+                String line = "Here is a line: this is the line";
+                System.out.print(line.substring(0, line.indexOf(":")));
+
+            Ex 2 (for a list):
+                String line = "apple, orange, banana";
+                String[] fruits = line.split(",");
+     */
+
+    public static void main(String[] args) {
+        String line = "apple, orange, banana";
+        String[] fruits = line.split(",");
+    }
+}
