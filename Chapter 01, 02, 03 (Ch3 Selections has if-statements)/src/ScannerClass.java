@@ -37,4 +37,25 @@ public class ScannerClass{
 
         input.close();
     }
+
+    //This is for File class in Chapter 12
+    /**
+			java.util.Scanner
+		+Scanner(source: File)						//Creates Scanner that produces values scanned from the specified file
+		+Scanner(source: String)					//Creates Scanner that produces values scanned from the specified String. It's
+														interesting to note that a Scanner can scan data from a file as well as from
+														a String
+		+close()									//Closes the Scanner
+		+hasNext(): boolean							//Returns true if this Scanner has more data to read
+		+next(): String								//Returns the next token as a String from this Scanner (doesn't count the line-ending
+														or line-separator (\r or \n))
+		+nextLine(): String							//Returns a line-ending with the line separator from this Scanner
+		+nextByte(): byte							//Returns next token as a byte from this Scanner
+		+nextShort(): short							//Returns next token as a short from this Scanner
+		+nextInt(): int								//Returns next token as a int from this Scanner
+		+nextLong(): long							//Returns next token as a long from this Scanner
+		+nextFloat(): float							//Returns next token as a float from this Scanner
+		+nextDouble(): double						//Returns next token as a double from this Scanner
+		**+useDelimiter(pattern: String): Scanner		//Sets this Scanner's delimiting pattern and returns this Scanner (Check below)
+	 */
 }
