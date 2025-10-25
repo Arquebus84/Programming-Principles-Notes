@@ -44,6 +44,17 @@ public class ReturnDataAndObjectExample {
 			getIntegersFrom(n - 1);
 		}
 	}
+
+	//Example of Linear Recursion: printing hello n times
+	public static void RecursiveHello(int n) {
+		if(n < 1) {								// Base Case: If n reaches zero, return will
+			return;					// NOTE: The return statement is used here to ensure that once this condition is met, the following 
+									//		statements of code will not execute, therefore, terminating the program
+		}else {
+			System.out.println("Hello");
+			RecursiveHello(n - 1);
+		}
+	}
 	
 	public static int getNextInt(int n) {
 
@@ -61,3 +72,4 @@ public class ReturnDataAndObjectExample {
 		}
 	}
 }
+
